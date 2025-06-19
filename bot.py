@@ -18,7 +18,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f"Bot is online as {bot.user}")
-    await bot.change_presence(activity=discord.Game(name="Made by Reverse"))
+    await bot.change_presence(activity=discord.Game(name="Made by Reverse | v.1.0"))
 
     for guild in bot.guilds:
         await create_roles(guild)
